@@ -1,0 +1,55 @@
+<html>
+<head>
+	<style type="text/css">
+		body{background:url('emoji.jpg');}
+		footer{clear:both;
+		text-align:center;
+		padding:20px;
+		background:url('emoji.jpg');
+		margin:10px;
+		margin-left:45%;
+		margin-right:45%;
+		margin-top:32%;
+		border:2px dashed green;}
+		input[type=email]	{
+								width: 25%;
+								padding: 8px 20px;
+								margin: 8px 0;
+								margin-left:56px;
+								border: 2px solid  blue;
+								border-radius: 2px;
+							}
+		input[type=password]{
+								width: 25%;
+								padding: 8px 20px;
+								margin: 8px 0;
+								margin-left:50px;
+								border: 2px solid  red;
+								border-radius: 2px;
+							}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+function login()
+{
+if(document.form.email.value==""||document.form.password.value=="")
+{
+	alert('feild is empty');
+}
+else{
+	alert('Logged in');
+}
+}
+</script>
+
+	<form name="form" id="form" method="post" action="index.html">
+			Email Id:<input type="email" name="email" id="email" required ><br>
+			Password:<input type="password" name="password" id="password" required ><br><br><br>
+			<input type="submit" value="submit" onclick="login()">
+	</form>	
+			<footer>
+	<a href="index.html">EXIT</a>
+</footer>
+</body>
+</html>
